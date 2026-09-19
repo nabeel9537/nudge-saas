@@ -1,0 +1,3 @@
+module.exports=[60380,a=>a.a(async(b,c)=>{try{var d=await a.y("@tanstack/react-query-6b5be30d1f6e66a3");a.n(d),c()}catch(a){c(a)}},!0),27669,(a,b,c)=>{b.exports=a.x("react",()=>require("react"))},8171,(a,b,c)=>{b.exports=a.x("react/jsx-runtime",()=>require("react/jsx-runtime"))},64950,a=>a.a(async(b,c)=>{try{var d=a.i(8171),e=a.i(60380),f=a.i(27669),g=b([e]);[e]=g.then?(await g)():g,a.s(["default",0,function({Component:a,pageProps:b}){let[c]=(0,f.useState)(()=>new e.QueryClient);return(0,d.jsx)(e.QueryClientProvider,{client:c,children:(0,d.jsx)(a,{...b})})}]),c()}catch(a){c(a)}},!1)];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__0z597g3._.js.map

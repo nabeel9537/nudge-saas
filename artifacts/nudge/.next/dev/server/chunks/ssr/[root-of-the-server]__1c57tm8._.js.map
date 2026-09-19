@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///home/runner/workspace/artifacts/nudge/src/pages/_app.tsx"],"sourcesContent":["import { QueryClient, QueryClientProvider } from '@tanstack/react-query';\nimport type { AppProps } from 'next/app';\nimport { useState } from 'react';\n\nimport '../index.css';\n\nexport default function App({ Component, pageProps }: AppProps) {\n  const [queryClient] = useState(() => new QueryClient());\n\n  return (\n    <QueryClientProvider client={queryClient}>\n      <Component {...pageProps} />\n    </QueryClientProvider>\n  );\n}"],"names":["App","Component","pageProps","queryClient","client"],"mappings":";;;;;AAAA;AAEA;;;;;;;;;AAIe,SAASA,IAAI,EAAEC,SAAS,EAAEC,SAAS,EAAY;IAC5D,MAAM,CAACC,YAAY,GAAG,IAAA,+GAAQ,EAAC,IAAM,IAAI,2UAAW;IAEpD,qBACE,qKAAC,mVAAmB;QAACC,QAAQD;kBAC3B,cAAA,qKAACF;YAAW,GAAGC,SAAS;;;;;;;;;;;AAG9B"}}]
+}

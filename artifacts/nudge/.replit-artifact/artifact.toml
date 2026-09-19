@@ -1,0 +1,34 @@
+kind = "web"
+previewPath = "/"
+title = "Nudge"
+description = "A clean full-stack TypeScript foundation for the Nudge SaaS product, ready for future product functionality without business logic in the initial scaffold."
+version = "1.0.0"
+id = "artifacts/nudge"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24370
+
+[services.development]
+run = "pnpm --filter @workspace/nudge run dev"
+
+[services.production]
+
+[services.production.build]
+args = ["pnpm", "--filter", "@workspace/nudge", "run", "build"]
+
+[services.production.run]
+args = ["pnpm", "--filter", "@workspace/nudge", "run", "serve"]
+
+[services.production.run.env]
+PORT = "24370"
+NODE_ENV = "production"
+
+[services.production.health.startup]
+path = "/"
+
+[services.env]
+PORT = "24370"
+BASE_PATH = "/"
